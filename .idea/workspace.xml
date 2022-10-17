@@ -20,14 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ec60c74-8a60-4654-88b3-97295d0813da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/modules/forms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/modules/changeModalState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/modules/checkNumInputs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/assets/server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/script.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/script.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/modules/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/modules/forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/modules/modals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/modules/modals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/modules/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/modules/tabs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665755578912</updated>
       <workItem from="1665755579950" duration="7049000" />
-      <workItem from="1665985952924" duration="12325000" />
+      <workItem from="1665985952924" duration="25536000" />
     </task>
     <servers />
   </component>

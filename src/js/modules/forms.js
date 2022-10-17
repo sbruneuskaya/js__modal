@@ -1,19 +1,14 @@
-const forms = () => {
+import checkNumInputs from './checkNumInputs'
+
+
+const forms = (state) => {
     const form = document.querySelectorAll('form'),
         // использую для очистки инпутов после отправки на сервер
-        inputs = document.querySelectorAll('input'),
+        inputs = document.querySelectorAll('input');
 
 
-        // обработка ввода данных(чтобы пользователь мог ввести в инпут телефона только цифры)
-        phoneInputs = document.querySelectorAll('input[name="user_phone"]')
-
-    phoneInputs.forEach(item => {
-        item.addEventListener('input', () => {
-// удаляем все символы, которые не числа
-//             D в верхнем регистре- означает, что ищем все не цифры
-            item.value=item.value.replace(/\D/, "")
-        })
-    })
+    // обработка ввода данных(чтобы пользователь мог ввести в инпут телефона только цифры)
+    checkNumInputs('input[name="user_phone"]')
 
 
     // для оповещения пользователя об отправке формы
@@ -56,6 +51,14 @@ const forms = () => {
 
             // собираю все данные которые есть в форме, это и будет тело запроса
             const formDate = new FormData(item)
+
+            if (item.getAttribute('data-calc') === 'end') {
+                for (let key in state) {
+                    if(state.hasOwnProperty(key)){
+                        formDate.append(key, state[key])
+                    }
+                }
+            }
 
 
             // отправляем запрос на сервер по адресу 'assets/server.php' с данными которые хранятся в formDate
