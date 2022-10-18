@@ -4,13 +4,14 @@ import tabs from './modules/tabs'
 import forms from './modules/forms'
 import changeModalState from './modules/changeModalState'
 import timer from './modules/timer'
+import images from './modules/images'
 
 window.addEventListener("DOMContentLoaded", () => {
 
 
     // создаем объект данных модалки для отправки формы
     let modalState={}
-    let deadline='2022-10-19';
+    let deadline='2022-12-19';
 
     modal()
     tabs('.glazing_slider', '.glazing_block', '.glazing_content', 'active')
@@ -19,4 +20,5 @@ window.addEventListener("DOMContentLoaded", () => {
     forms(modalState)
     changeModalState(modalState)
     timer('#timer', deadline)
+    images()
 })
